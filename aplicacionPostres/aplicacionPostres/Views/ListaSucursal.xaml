@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aplicacionPostres.Views.ListaSucursal">
+    <ContentPage.Content>
+        <StackLayout Background="#9a5833">
+            <Label Text="Registro de sucursales" TextColor="#f5e1ce" FontSize="30" HorizontalOptions="Center"  Margin="0,0,0,0" FontAttributes="Bold" FontFamily="Arial"></Label>
+            <CollectionView x:Name="collectionView" SelectionMode="Single" SelectionChanged="collectionView_SelectionChanged"  Background="#f5e1ce">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="35" />
+                                <RowDefinition Height="35" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="70" />
+                                <ColumnDefinition Width="320" />
+                            </Grid.ColumnDefinitions>
+                                <Image Grid.RowSpan="2"
+                           Source="/Resources/drawable/cafeteriachiquuita.png"
+                           Aspect="AspectFill"
+                           HeightRequest="60"
+                           WidthRequest="60" />
+                                <Label Grid.Column="1"
+                           Text="{Binding Nombre}"
+                           FontAttributes="Bold"
+                           LineBreakMode="TailTruncation" />
+                                <Label Grid.Row="1"
+                           Grid.Column="1"
+                           Text="{Binding Direccion}"
+                           LineBreakMode="TailTruncation"
+                           FontAttributes="Italic"
+                           VerticalOptions="End" />
+                                <Label Grid.Row="2" Text="__________" TextColor="#8a4932" />
+                                <Label Grid.Row="2" Grid.Column="1" Text="__________________________________________________" TextColor="#8a4932" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <StackLayout x:Name="popupSLayout"
+             BackgroundColor="#f5e1ce"
+             AbsoluteLayout.LayoutBounds="0,0,1,1"
+             AbsoluteLayout.LayoutFlags="All"
+             IsVisible="False"
+             Spacing="0">
+                <Label Text="Actualizar Sucursal" TextColor="#9a5833" FontSize="20" HorizontalOptions="Center"  Margin="0,0,0,0" FontAttributes="Italic" FontFamily="Arial"></Label>
+                <Entry x:Name="entryNombreSucursal" TextColor="#8a4932" Placeholder="Nombre de la sucursal"  PlaceholderColor="#e6b68b" Margin="0,10,0,10"/>
+                <Entry x:Name="entryDireccion" TextColor="#8a4932" Placeholder="Direccion de la sucursal"  PlaceholderColor="#e6b68b" Margin="0,10,0,10"/>
+                <Entry x:Name="entryTelefono"  TextColor="#8a4932" Placeholder="Telefono de la sucursal"  PlaceholderColor="#e6b68b" Margin="0,10,0,10"/>
+                <Button Margin="0,2,0,10" Text="Guardar" x:Name="btnActualizarS" Clicked="OnBtnActualizarS"
+                FontSize="Medium" TextColor="White" Padding="60,10" BorderColor="Black" BackgroundColor="#9a5833"  FontFamily="Arial" CornerRadius="30" FlexLayout.AlignSelf="Stretch"  HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <Button Margin="0,10,0,2" Text="Actualizar sucursal" x:Name="btnActS" Clicked="OnBtnActS"
+                FontSize="Medium" TextColor="White" Padding="90,12" BorderColor="Black" BackgroundColor="#66280a"  FontFamily="Arial" CornerRadius="5" FlexLayout.AlignSelf="Stretch"  HorizontalOptions="CenterAndExpand"/>
+            <Button Margin="0,2,0,20" Text="Eliminar sucursal" x:Name="btnEliminarS" Clicked="OnBtnEliminarS" 
+                FontSize="Medium" TextColor="White" Padding="100,12" BorderColor="Black" BackgroundColor="#66280a"  CornerRadius="5" FlexLayout.AlignSelf="Stretch"  HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

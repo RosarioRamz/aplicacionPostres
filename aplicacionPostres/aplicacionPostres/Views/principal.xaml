@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aplicacionPostres.Views.principal" >
+  <!--Pages can be added as references or inline-->
+    <ContentPage Title="Postres" >
+        <StackLayout >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition  />
+                    <RowDefinition  />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions >
+                <BoxView Color="#8a4932" />
+                <BoxView Color="#8a4932" />
+                <ImageButton Source="/Resources/drawable/a.png" Clicked="OnPage" x:Name="btnCambiar"  BackgroundColor="#8a4932"/>
+                <BoxView Grid.Row="0" 
+                         Grid.Column="1" 
+                 Color="#f5e1ce" />
+                <ImageButton Grid.Row="0" Grid.Column="1"  Source="/Resources/drawable/b.png" Clicked="OnPageDos" x:Name="btnCambiarDos" BackgroundColor="#f5e1ce"/>
+                <BoxView Grid.Column="0" Grid.Row="1"
+                 Color="#f5e1ce" />
+                <ImageButton Grid.Column="0" Grid.Row="1"  Source="/Resources/drawable/c.png" Clicked="OnPageTres" x:Name="btnCambiarTres" BackgroundColor="#f5e1ce"/>
+                <BoxView Grid.Row="1"
+                 Grid.Column="1"
+                 Color="#8a4932" />
+                <ImageButton Grid.Row="1"
+               Grid.Column="1"   Source="/Resources/drawable/d.png" Clicked="OnPageCuatro" x:Name="btnCambiarCuatro" BackgroundColor="#8a4932" />
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Pan" >
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition  />
+                    <RowDefinition  />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions >
+                <BoxView Color="#8a4932" />
+                <ImageButton BackgroundColor="#8a4932" Clicked="OnPageCinco" x:Name="btnCambiarPan" Source="/Resources/drawable/p1.png" />
+                <BoxView Grid.Row="0" 
+                         Grid.Column="1" 
+                 Color="#f5e1ce" />
+                <ImageButton Grid.Row="0" Grid.Column="1" BackgroundColor="#f5e1ce" Clicked="OnPageSiete" x:Name="btnCambiarPanTres" Source="/Resources/drawable/p8.png"/>
+                <BoxView Grid.Column="0" Grid.Row="1"
+                 Color="#f5e1ce" />
+                <ImageButton BackgroundColor="#f5e1ce" Clicked="OnPageSeis" x:Name="btnCambiarPanDos" Grid.Column="0" Grid.Row="1"  Source="/Resources/drawable/p3.png"/>
+                <BoxView Grid.Row="1"
+                 Grid.Column="1"
+                 Color="#8a4932" />
+                <ImageButton Grid.Row="1"
+               Grid.Column="1" BackgroundColor="#8a4932" Clicked="OnPageOcho" x:Name="btnCambiarPanCuatro" Source="/Resources/drawable/p4.png" />
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Bebidas">
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition  />
+                    <RowDefinition  />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions >
+                <BoxView Color="#8a4932" />
+                <ImageButton BackgroundColor="#8a4932" Clicked="OnPageNueve" x:Name="btnCambiarBebida" Source="/Resources/drawable/b1.png" />
+                <BoxView Grid.Row="0" 
+                         Grid.Column="1" 
+                 Color="#f5e1ce" />
+                <ImageButton Grid.Row="0" Grid.Column="1" BackgroundColor="#f5e1ce" Clicked="OnPageDiez" x:Name="btnCambiarBebidaDos" Source="/Resources/drawable/b6.png"/>
+                <BoxView Grid.Column="0" Grid.Row="1"
+                 Color="#f5e1ce" />
+                <ImageButton Grid.Column="0" Grid.Row="1"  BackgroundColor="#f5e1ce" Clicked="OnPageOnce" x:Name="btnCambiarBebidaTres"   Source="/Resources/drawable/b3.png"/>
+                <BoxView Grid.Row="1"
+                 Grid.Column="1"
+                 Color="#8a4932" />
+                <ImageButton Grid.Row="1"
+               Grid.Column="1"   BackgroundColor="#f5e1ce" Clicked="OnPageDoce" x:Name="btnCambiarBebidaCuatro"  Source="/Resources/drawable/b7.png" />
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>

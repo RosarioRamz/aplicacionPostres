@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aplicacionPostres.Views.formulario">
+    <ContentPage.Content>
+        <StackLayout Background="#f5e1ce"  >
+            <Label Text="Producto" TextColor="#8a4932" FontSize="35" HorizontalOptions="Center"  Margin="0,30,0,0" FontAttributes="Bold" FontFamily="Arial"></Label>
+            <Label Text="__________________________________________________________" TextColor="#8a4932" FontSize="15" HorizontalOptions="Center"  Margin="0,0,0,30" FontAttributes="Bold" FontFamily="Arial"></Label>
+            <Entry x:Name="entryNombre" Text="" TextColor="#8a4932" Placeholder="Nombre del producto"  PlaceholderColor="#e6b68b" Margin="0,10,0,10"/>
+            <Entry x:Name="entryPrecio" TextColor="#8a4932" Placeholder="Precio" PlaceholderColor="#e6b68b"  Margin="0,10,0,10"/>
+            <Entry x:Name="entryCategoria" Text="" TextColor="#8a4932"  Placeholder="Categoría"  PlaceholderColor="#e6b68b"  Margin="0,10,0,10" />
+            <Entry x:Name="entryDescrip" Text="" TextColor="#8a4932"  Placeholder="Descripción"  PlaceholderColor="#e6b68b"  Margin="0,10,0,10" />
+            <Entry x:Name="entryRuta" Text="Resources/drawable/postre1.png" TextColor="#8a4932"  PlaceholderColor="#e6b68b"  Margin="0,10,0,10"/>
+            <Button Text="Registrar producto" Clicked="OnbtnRegistrar"  Margin="0,30,0,10"
+                x:Name="btnRegistrar"
+                FontSize="Medium" TextColor="White" BorderColor="Black" BackgroundColor="#66280a"  CornerRadius="30" FlexLayout.AlignSelf="Stretch"  HorizontalOptions="CenterAndExpand"
+         />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

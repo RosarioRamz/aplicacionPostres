@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aplicacionPostres.MainPage">
+
+    <StackLayout Background="#f5e1ce">
+        <Frame BackgroundColor="#9a5833" Padding="24" CornerRadius="0">
+            <Label Text="¡Bienvenido Postrecitos!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
+        </Frame>
+        <Image Grid.Column="1" Margin="0,20,0,0" Source="/Resources/drawable/logo.png"/>
+        <Button Text="Menú"
+                Clicked="onMenu"
+                x:Name="btnMenu"
+                FontSize="Large"  Margin="30" Padding="98,15" TextColor="White" BorderColor="Black" BackgroundColor="#66280a"  CornerRadius="20" FlexLayout.AlignSelf="Stretch"  HorizontalOptions="CenterAndExpand"/>
+        <Button Text="Registro"
+                Clicked="onRegistro"
+                x:Name="btnRegistro"  Padding="80,15" FontSize="Large" TextColor="White" BorderColor="Black" BackgroundColor="#66280a"  CornerRadius="20" FlexLayout.AlignSelf="Stretch"  HorizontalOptions="CenterAndExpand" />
+
+        <!--<Button Text="grid" Clicked="ongrid" x:Name="btngrid"/>-->
+    </StackLayout>
+
+</ContentPage>

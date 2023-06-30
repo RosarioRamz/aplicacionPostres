@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aplicacionPostres.Views.intermedioRegistro">
+    <StackLayout Background="#f5e1ce">
+        <Frame BackgroundColor="#9a5833" Padding="24" CornerRadius="0">
+            <Label Text="Registro" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
+        </Frame>
+        <Image Grid.Column="1" Margin="0,20,0,0" Source="/Resources/drawable/sucursal.png"/>
+        <Button x:Name="btnRegistrarProducto" Clicked="OnbtnRegistrarProducto" Text="Registrar Producto" FontSize="Small"  Margin="0,30,0,0" Padding="98,15" TextColor="White" BorderColor="Black" BackgroundColor="#66280a"  CornerRadius="20" FlexLayout.AlignSelf="Stretch"  HorizontalOptions="CenterAndExpand"></Button>
+        <Button x:Name="btnRegistrarSucursal" Clicked="OnbtnRegistrarSucursal" Text="Registrar Sucursal" FontSize="Small"  Margin="0,30,0,0" Padding="98,15" TextColor="White" BorderColor="Black" BackgroundColor="#66280a"  CornerRadius="20" FlexLayout.AlignSelf="Stretch"  HorizontalOptions="CenterAndExpand"></Button>
+    </StackLayout>
+</ContentPage>
